@@ -1,8 +1,8 @@
 <p align="center"><img src="images/devops_exercises.png"/></p>
 
-:information_source: &nbsp;This repo contains questions and exercises on various technical topics, sometimes related to DevOps and SRE :)
+:information_source: &nbsp;ℹ️  Этот репозиторий содержит вопросы и упражнения на различные технические темы связанные с DevOps и SRE :)
 
-:bar_chart: &nbsp;There are currently **1726** questions
+:bar_chart: &nbsp;На текущий момент содержит **1726** вопросов
 
 :books: &nbsp;To learn more about DevOps and SRE, check the resources in [devops-resources](https://github.com/bregman-arie/devops-resources) repository
 
@@ -206,7 +206,7 @@ Things to think about:
 
 <details>
 <summary>What is Version Control?</summary><br><b>
-	
+
 * Version control is the sytem of tracking and managing changes to software code.
 * It helps software teams to manage changes to source code over time.
 * Version control also helps developers move faster and allows software teams to preserve efficiency and agility as the team scales to include more developers.
@@ -214,7 +214,7 @@ Things to think about:
 
 <details>
 <summary>What is a commit?</summary><br><b>
-	
+
 * In Git, a commit is a snapshot of your repo at a specific point in time.
 * The git commit command will save all staged changes, along with a brief description from the user, in a “commit” to the local repository.
 </b></details>
@@ -233,7 +233,7 @@ Things to think about:
 
 <details>
 <summary>What best practices are you familiar with regarding version control?</summary><br><b>
-	
+
 * Use a descriptive commit message
 * Make each commit a logical unit
 * Incorporate others' changes frequently
@@ -267,7 +267,7 @@ For more info please read [here](https://www.atlassian.com/continuous-delivery/c
 There are many answers for such a question, as CI processes vary, depending on the technologies used and the type of the project to where the change was submitted.
 Such processes can include one or more of the following stages:
 
-* Compile 
+* Compile
 * Build
 * Install
 * Configure
@@ -657,7 +657,7 @@ This might be considered to be an opinionated answer:
 - Plugin
 - Node or Worker
 - Executor</summary><br><b>
-- Job is an automation definition = what and where to execute once the user clicks on "build" 
+- Job is an automation definition = what and where to execute once the user clicks on "build"
 - Build is a running instance of a job. You can have one or more builds at any given point of time (unless limited by confiugration)
 - A worker is the machine/instance on which the build is running. When a build starts, it "acquires" a worker out of a pool to run on it.
 - An executor is variable of the worker, defining how many builds can run on that worker in parallel. An executor value of 3 means, that 3 builds can run at any point on that executor (not necessarily of the same job. Any builds)
@@ -756,12 +756,12 @@ You can describe the UI way to add new nodes but better to explain how to do in 
 <details>
 <summary>What is Cloud Computing? What is a Cloud Provider?</summary><br><b>
 
-Cloud computing refers to the delivery of on-demand computing services 
+Cloud computing refers to the delivery of on-demand computing services
 over the internet on a pay-as-you-go basis.
 
 In simple words, Cloud computing is a service that lets you use any computing
-service such as a server, storage, networking, databases, and intelligence, 
-right through your browser without owning anything. You can do anything you 
+service such as a server, storage, networking, databases, and intelligence,
+right through your browser without owning anything. You can do anything you
 can think of unless it doesn’t require you to stay close to your hardware.
 
 Cloud service providers are companies that establish public clouds, manage private clouds, or offer on-demand cloud computing components (also known as cloud computing services) like Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service(SaaS). Cloud services can reduce business process costs when compared to on-premise IT.
@@ -2720,7 +2720,7 @@ Using the `mv` command.
 </b></details>
 
 <details>
-<summary>Specify which command would you use (and how) for each of the following scenarios 
+<summary>Specify which command would you use (and how) for each of the following scenarios
 
   * Remove a directory with files
   * Display the content of a file
@@ -5277,7 +5277,7 @@ True
   * Arguments
   * Attributes
   * Meta-arguments</summary><br><b>
-  
+
   - Arguments: resource specific configurations
   - Attributes: values exposed by the resource in a form of `resource_type.resource_name.attribute_name`. They are set by the provider or API usually.
   - Meta-arguments: Functions of Terraform to change resource's behaviour
@@ -5357,7 +5357,7 @@ Using `validation` block
 ```
 variable "some_var" {
   type = number
-  
+
   validation {
     condition = var.some_var > 1
     error_message = "you have to specify a number greater than 1"
@@ -5385,7 +5385,7 @@ True
   - The file `terraform.tfvars`
   - Environment variable
   - Using `-var` or `-var-file`
-  
+
 According to varaible precedence, which source will be used first?</summary><br><b>
 
 The order is:
@@ -5436,7 +5436,7 @@ As such, tfstate shouldn't be stored in git repositories. secured storage such a
 
   - Don't edit it manually. tfstate was designed to be manipulated by terraform and not by users directly.
   - Store it in secured location (since it can include credentials and sensitive data in general)
-  - Backup it regularly so you can roll-back easily when needed 
+  - Backup it regularly so you can roll-back easily when needed
   - Store it in remote shared storage. This is especially needed when working in a team and the state can be updated by any of the team members
   - Enabled versioning if the storage where you store the state file, supports it. Versioning is great for backups and roll-backs in case of an issue.
 </b></details>
@@ -5929,7 +5929,7 @@ The master coordinates all the workflows in the cluster:
 <summary>True or False? Every cluster must have 0 or more master nodes and at least 1 worker</summary><br><b>
 
 False. A Kubernetes cluster consists of at least 1 master and can have 0 workers (although that wouldn't be very useful...)
-</b></details> 
+</b></details>
 
 <details>
 <summary>What are the components of the master node?</summary><br><b>
@@ -5961,7 +5961,7 @@ False. A Kubernetes cluster consists of at least 1 master and can have 0 workers
 <summary>Explain what is a Pod</summary><br><b>
 
 A Pod is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers.<br>
-Pods are the smallest deployable units of computing that you can create and manage in Kubernetes. 
+Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.
 </b></details>
 
 <details>
@@ -6176,7 +6176,7 @@ Only containers whose state set to Success will be able to receive requests sent
 <summary>What is a "Deployment" in Kubernetes?</summary><br><b>
 
 A Kubernetes Deployment is used to tell Kubernetes how to create or modify instances of the pods that hold a containerized application.
-Deployments can scale the number of replica pods, enable rollout of updated code in a controlled manner, or roll back to an earlier deployment version if necessary. 
+Deployments can scale the number of replica pods, enable rollout of updated code in a controlled manner, or roll back to an earlier deployment version if necessary.
 
 A Deployment is a declarative statement for the desired state for Pods and Replica Sets.
 </b></details>
@@ -6385,7 +6385,7 @@ backend is referencing the internal service (serviceName is the name under metad
 <details>
 <summary>What is Ingress Controller?</summary><br><b>
 
-An implementation for Ingress. It's basically another pod (or set of pods) that does evaluates and processes Ingress rules and this it manages all the redirections. 
+An implementation for Ingress. It's basically another pod (or set of pods) that does evaluates and processes Ingress rules and this it manages all the redirections.
 
 There are multiple Ingress Controller implementations (the one from Kubernetes is Kubernetes Nginx Ingress Controller).
 </b></details>
@@ -7113,7 +7113,7 @@ You should run something like this: `echo -n 'mySecretPassword' | base64` and pa
 </b></details>
 
 <details>
-<summary>What the following in Deployment configuration file means? 
+<summary>What the following in Deployment configuration file means?
 
 ```
 spec:
@@ -9074,7 +9074,7 @@ def loop_exists(self):
         one_step_p = self.head.next
         two_step_p = self.head.next.next
         if (one_step_p == two_steps_p):
-            return True 
+            return True
     return False
 ```
 </b></details>
@@ -10290,7 +10290,7 @@ False. It can run on any node.
 1. Client is using an address of application running on OpenShift
 2. DNS resolves to host running the router
 3. Router checks whether route exists
-4. Router proxies the request to the internal pod 
+4. Router proxies the request to the internal pod
 </b></details>
 
 #### OpenShift - Security
@@ -13237,7 +13237,7 @@ RAM (Random Access Memory) is the hardware in a computing device where the opera
 <details>
 <summary>What is an embedded system?</summary><br><b>
 
-An embedded system is a computer system - a combination of a computer processor, computer memory, and input/output peripheral devices—that has a dedicated function within a larger mechanical or electronic system. It is embedded as part of a complete device often including electrical or electronic hardware and mechanical parts. 
+An embedded system is a computer system - a combination of a computer processor, computer memory, and input/output peripheral devices—that has a dedicated function within a larger mechanical or electronic system. It is embedded as part of a complete device often including electrical or electronic hardware and mechanical parts.
 </b></details>
 
 <details>
@@ -13266,7 +13266,7 @@ As defined by Doug Laney:
 <details>
 <summary>What is DataOps? How is it related to DevOps?</summary><br><b>
 
- DataOps seeks to reduce the end-to-end cycle time of data analytics, from the origin of ideas to the literal creation of charts, graphs and models that create value. 
+ DataOps seeks to reduce the end-to-end cycle time of data analytics, from the origin of ideas to the literal creation of charts, graphs and models that create value.
  DataOps combines Agile development, DevOps and statistical process controls and applies them to data analytics.
 </b></details>
 
